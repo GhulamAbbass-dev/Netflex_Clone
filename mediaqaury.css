@@ -1,10 +1,10 @@
-@media screen and (max-width:480px) {
+@media (max-width: 480px) {
   /* Styles for tablets in landscape mode */
 
 
   .main {
     background-image: url("./Assects/images/herobg.jpg");
-    height: 80vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: max(1300px, 100vw);
@@ -20,11 +20,11 @@ nav {
   justify-content:space-evenly;
     height: 10vh;
     align-items: center;
-    /* padding: 10px; */
+   
    
 }
 nav img{
-    width: 160px;
+    width: 140px;
     margin-left: -33px;
 }
 .filter-green {
@@ -40,17 +40,37 @@ nav button{
     border-radius: 12px;
     cursor: pointer;
 }
+.hero {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    padding:0 30px;
+    margin-top: 10px;
+
+}
 .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 900;
     font-family: "Montserrat", sans-serif;
     line-height: 40px;
     text-align: center;
+    margin-left: -50px;
+    margin-top: -80px;
 
 }
+.respon{
+    display: inline;
+}
 .responsive-br {
-    display: none;
+    display:inline;
   }
+ 
 .hero p {
     font-size: 16px;
     font-weight: 400;
@@ -62,20 +82,27 @@ text-align: center;
 
 .hero h3 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     /* line-height: 20px; */
     font-family: "Montserrat", sans-serif;
-    text-align: center;
+   text-align: center;
+    margin-left: -43px;
+}
+.responsive{
+    display: inline;
 }
 .search {
-    margin-top: 5px;
+    margin-top: 2px;
     display:block;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 999;
-    width: 400px;
+    text-align: center;
+    width: 340px;
     height: 80px;
+    background-color: aqua;
+    margin-left: 10px;
   
    
     
@@ -84,9 +111,9 @@ text-align: center;
 /* Container */
 .field {
     position: relative;
-    margin: 1.25rem 0;
+    margin: 0.10rem 0;
     font-family: system-ui, sans-serif;
-    width: 400px;
+    width: 340px;
     height: 56px;
     margin-left: -12px;
 }
@@ -135,7 +162,7 @@ color: white;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-left: 100px;
+margin-left: 70px;
 }
 
 
