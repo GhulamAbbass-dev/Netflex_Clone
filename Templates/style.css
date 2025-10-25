@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --bgcolour: rgb(255, 0, 13);
+}
+body{
+    background-color: #000;
+}
+.main {
+    background-image: url("/Assects/images/herobg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: max(1300px, 100vw);
+
+    position: relative;
+}
+
+.main .overlay {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+
+}
+
+nav {
+    width: 80%;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    padding: 50px;
+}
+
+.filter-green {
+    filter: invert(14%) sepia(93%) saturate(7498%) hue-rotate(356deg) brightness(94%) contrast(126%);
+}
+
+nav button {
+
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: var(--bgcolour);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    padding:0 30px;
+
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    line-height: 70px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+text-align: center;
+    font-style: normal;
+    /* line-height: 50px; */
+}
+
+.hero h3 {
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 20px; */
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.search {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    z-index: 999;
+    width: 608px;
+    height: 80px;
+   
+    
+
+}
+
+
+/* Container */
+.field {
+    position: relative;
+    margin: 1.25rem 0;
+    font-family: system-ui, sans-serif;
+    width: 400.062px;
+    height: 56px;
+}
+
+/* Inputs */
+.field input {
+    width: 100%;
+    padding: 1rem 0.5rem 0.25rem;
+    /* top padding leaves room for floating label */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.473);
+    outline: none;
+    box-sizing: border-box;
+    height: 65px;
+}
+
+/* Label sits over the input */
+.field label {
+    position: absolute;
+    left: 0.6rem;
+    top: 1rem;
+    /* aligns with input text baseline */
+    pointer-events: none;
+    /* clicks go to the input */
+    transition: transform 180ms ease, font-size 180ms ease, top 180ms ease, color 180ms;
+    transform-origin: left top;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.field input:focus+label,
+.field input:not(:placeholder-shown)+label {
+    transform: translateY(-0.9rem) scale(0.85);
+    /* move up & slightly smaller */
+    top: 1.40rem;
+    color: #ffffff;
+    /* accent color */
+   
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* Focus styles for input */
+.field input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.08);
+}
+
+/* Small helper for required indicator (optional) */
+.field input:required+label::after {
+    content: " *";
+    color: #d00;
+    font-size: 1rem;
+    margin-left: 0.1rem;
+}
+
+
+.search button {
+    width: 200.337px;
+    height: 66px;
+    font-weight:500;
+    font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+    background-color: var(--bgcolour);
+    border-radius: 5px;
+    border: 0.800px;
+    cursor: pointer;
+    margin-top: 7px;
+    /* font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;  */
+color: white;
+}
+
+
+
+/* --- Netflix Curve Section --- */
+.trending-section {
+  position: relative;
+  background: #000;
+  padding: 80px 50px;
+  overflow: hidden;
+}
+
+/* curved red gradient top border */
+.trending-section::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: radial-gradient(ellipse at top, #493df6 0%, #000 70%);
+  clip-path: ellipse(70% 100% at 50% 100%);
+  z-index: 1;
+}
+
+/* section title */
+.trending-section h2 {
+  position: relative;
+  z-index: 999;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: -33px;
+  color: white;
+  font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.movie-card{
+transition: all 1s ease-out;;
+}
+.movie-card:hover{
+   transform: translateY(-12px);
+}
+.num{
+    position: absolute;
+    top:150px;
+    left:-20px;
+    font-weight: 700;
+ font-family: "Montserrat",;
+    font-size: 100px ;
+    color: black;
+   font-style: normal;
+      -webkit-text-stroke: 3px rgb(255, 255, 255); /* Adds a 1px red stroke around the text */
+      text-shadow: 3px 4px 5px black; 
+      
+   
+}
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }}
+
+  .join-reasons{
+    width: 100%;
+     position: relative;
+  background: #000;
+  padding: 80px 30px;
+  overflow: hidden;
+     
+       backdrop-filter: blur(30px);
+      
+ 
+
+  }
+  .join-reasons h2{
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 999;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: -33px;
+  color: white;
+  margin-left: 50px;
+  font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  }
+  .cardd{
+    /* width: 100%; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 20px
+    ;
+  }
+
+
+
+  .cardd .col{
+   /* width: 280px; */
+    height: 300px;
+   background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 18px;
+  
+  }
+  
+
+
+
+
