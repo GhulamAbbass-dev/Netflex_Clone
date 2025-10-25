@@ -2,175 +2,185 @@
 
 
 
-  .main {
-    background-image: url("./Assects/images/herobg.jpg");
-    height: 80vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: max(1300px, 100vw);
+    .main {
+        background-image: url("./Assects/images/herobg.jpg");
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: max(1300px, 100vw);
 
-    position: relative;
-}
-nav{
-    width:100vw;
-    position: absolute;
-    top: 0px;
-    z-index: 999;
-    display:flex;
-  justify-content:space-between;
-    height: 10vh;
-  
-  
-   
-   
-}
-nav img{
-    width: 140px;
-    margin-left: -20px;
-}
-.filter-green {
-    filter: invert(14%) sepia(93%) saturate(7498%) hue-rotate(356deg) brightness(94%) contrast(126%);
-}
-nav button{
-    position: relative;
-    margin-left: 60px;
-    width: 210px;
-    height: 40px;
-    border: none;
-    background-color: var(--bgcolour);
-    border-radius: 12px;
-    color: rgb(0, 0, 0);
-    border-radius: 4px;
-    cursor: pointer;
-}
-.hero {
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    z-index: 999;
-    text-align: center;
-    /* padding:0 30px; */
+        position: relative;
+    }
+
+    nav {
+        width: 100vw;
+        position: absolute;
+        top: 0px;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
 
 
-}
-.hero h1 {
-    font-size: 30px;
-    font-weight: 900;
-    font-family: "Montserrat", sans-serif;
-    line-height: 40px;
-    text-align: center;
-    
-    margin-top: 80px;
-
-}
-.respon{
-    display: inline;
-}
-.responsive-br {
-    display:inline;
-  }
- 
-.hero p {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-text-align: center;
-    font-style: normal;
-
-}
-
-.hero h3 {
-    font-size: 16px;
-    font-weight: 300;
-    /* line-height: 20px; */
-    font-family: "Montserrat", sans-serif;
-   text-align: center;
-  
-}
-.responsive{
-    display: inline;
-}
-.search {
-    margin-top: 2px;
-    display:block;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 999;
-    text-align: center;
-    width: 300px;
-    height: 80px;
-  
-    margin-left: 10px;
-  
-   
-    
-
-}
-/* Container */
-.field {
-    position: relative;
-    margin: 0.10rem 0;
-    font-family: system-ui, sans-serif;
-    width: 290px;
-    height: 56px;
-    margin-left: -12px;
-    text-align: center;
-}
-
-/* Inputs */
-.field input {
-    width: 100%;
-    padding: 1rem 0.5rem 0.25rem;
-    /* top padding leaves room for floating label */
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background: rgba(0, 0, 0, 0.473);
-    outline: none;
-    box-sizing: border-box;
-    height: 55px;
-}
-
-/* Label sits over the input */
-.field label {
-    position: absolute;
-    left: 0.6rem;
-    top: 1rem;
-    /* aligns with input text baseline */
-    pointer-events: none;
-    /* clicks go to the input */
-    transition: transform 180ms ease, font-size 180ms ease, top 180ms ease, color 180ms;
-    transform-origin: left top;
-    color: #ffffff;
-    font-size: 1rem;
-}
-
-.search button {
-    width: 190.337px;
-    height: 50px;
-    font-weight:500;
-    font-size: 24px;
-  font-family: "Ubuntu", sans-serif;
-    background-color: var(--bgcolour);
-    border-radius: 5px;
-    border: 0.800px;
-    cursor: pointer;
-    margin-top: 7px;
-    /* font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;  */
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 50px;
-}
 
 
-    .cardd{
+    }
+
+    nav img {
+        width: 140px;
+        margin-left: -20px;
+    }
+
+    .filter-green {
+        filter: invert(14%) sepia(93%) saturate(7498%) hue-rotate(356deg) brightness(94%) contrast(126%);
+    }
+
+    nav button {
+        position: relative;
+        margin-left: 60px;
+        width: 210px;
+        height: 40px;
+        border: none;
+        background-color: var(--bgcolour);
+        border-radius: 12px;
+        color: rgb(0, 0, 0);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .hero {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        z-index: 999;
+        text-align: center;
+        /* padding:0 30px; */
+
+
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        font-weight: 900;
+        font-family: "Montserrat", sans-serif;
+        line-height: 40px;
+        text-align: center;
+
+        margin-top: 80px;
+
+    }
+
+    .respon {
+        display: inline;
+    }
+
+    .responsive-br {
+        display: inline;
+    }
+
+    .hero p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-style: normal;
+
+    }
+
+    .hero h3 {
+        font-size: 16px;
+        font-weight: 300;
+        /* line-height: 20px; */
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+
+    }
+
+    .responsive {
+        display: inline;
+    }
+
+    .search {
+        margin-top: 2px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+        text-align: center;
+        width: 300px;
+        height: 80px;
+        margin-left: 10px;
+
+
+
+
+    }
+
+    /* Container */
+    .field {
+        position: relative;
+        margin: 0.10rem 0;
+        font-family: system-ui, sans-serif;
+        width: 290px;
+        height: 56px;
+        margin-left: -12px;
+        text-align: center;
+    }
+
+    /* Inputs */
+    .field input {
+        width: 100%;
+        padding: 1rem 0.5rem 0.25rem;
+        /* top padding leaves room for floating label */
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.473);
+        outline: none;
+        box-sizing: border-box;
+        height: 55px;
+    }
+
+    /* Label sits over the input */
+    .field label {
+        position: absolute;
+        left: 0.6rem;
+        top: 1rem;
+        /* aligns with input text baseline */
+        pointer-events: none;
+        /* clicks go to the input */
+        transition: transform 180ms ease, font-size 180ms ease, top 180ms ease, color 180ms;
+        transform-origin: left top;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    .search button {
+        width: 190.337px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 24px;
+        font-family: "Ubuntu", sans-serif;
+        background-color: var(--bgcolour);
+        border-radius: 5px;
+        border: 0.800px;
+        cursor: pointer;
+        margin-top: 7px;
+        /* font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;  */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+
+    .cardd {
         flex-wrap: wrap;
     }
 
