@@ -1,8 +1,18 @@
 @media screen and (min-width: 375px) and (max-width: 667px) {
   /* Styles for tablets in landscape mode */
 
+
+  .main {
+    background-image: url("./Assects/images/herobg.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: max(1300px, 100vw);
+
+    position: relative;
+}
 nav {
-    width:100vw;
+    width:97vw;
     position: absolute;
     top: 0px;
     z-index: 999;
@@ -11,6 +21,7 @@ nav {
     height: 10vh;
     align-items: center;
     /* padding: 10px; */
+   
 }
 nav img{
     width: 160px;
@@ -32,6 +43,7 @@ nav button{
     font-family: "Montserrat", sans-serif;
     line-height: 40px;
     text-align: center;
+
 }
 .responsive-br {
     display: none;
@@ -59,9 +71,9 @@ text-align: center;
     align-items: center;
     position: relative;
     z-index: 999;
-    width: 600px;
+    width: 400px;
     height: 80px;
-
+  
    
     
 
@@ -71,8 +83,9 @@ text-align: center;
     position: relative;
     margin: 1.25rem 0;
     font-family: system-ui, sans-serif;
-    width: 300px;
+    width: 400px;
     height: 56px;
+    margin-left: -12px;
 }
 
 /* Inputs */
@@ -86,7 +99,7 @@ text-align: center;
     background: rgba(0, 0, 0, 0.473);
     outline: none;
     box-sizing: border-box;
-    height: 65px;
+    height: 55px;
 }
 
 /* Label sits over the input */
@@ -104,8 +117,8 @@ text-align: center;
 }
 
 .search button {
-    width: 200.337px;
-    height: 66px;
+    width: 190.337px;
+    height: 50px;
     font-weight:500;
     font-size: 24px;
   font-family: "Ubuntu", sans-serif;
@@ -119,7 +132,7 @@ color: white;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-left: 55px;
+margin-left: 100px;
 }
 
 
